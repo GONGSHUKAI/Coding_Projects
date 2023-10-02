@@ -1,0 +1,143 @@
+第一组：
+
+MyCube.back[0][0] = 'g'; MyCube.back[0][1] = 'g'; MyCube.back[0][2] = 'r';
+MyCube.back[1][0] = 'r'; MyCube.back[1][1] = 'y'; MyCube.back[1][2] = 'r';
+MyCube.back[2][0] = 'y'; MyCube.back[2][1] = 'b'; MyCube.back[2][2] = 'y';
+    
+MyCube.down[0][0] = 'r'; MyCube.down[0][1] = 'r'; MyCube.down[0][2] = 'b';
+MyCube.down[1][0] = 'w'; MyCube.down[1][1] = 'r'; MyCube.down[1][2] = 'w';
+MyCube.down[2][0] = 'r'; MyCube.down[2][1] = 'r'; MyCube.down[2][2] = 'b';
+    
+MyCube.front[0][0] = 'w'; MyCube.front[0][1] = 'p'; MyCube.front[0][2] = 'w';
+MyCube.front[1][0] = 'g'; MyCube.front[1][1] = 'w'; MyCube.front[1][2] = 'g';
+MyCube.front[2][0] = 'b'; MyCube.front[2][1] = 'b'; MyCube.front[2][2] = 'p';
+    
+MyCube.left[0][0] = 'w'; MyCube.left[0][1] = 'w'; MyCube.left[0][2] = 'r';
+MyCube.left[1][0] = 'p'; MyCube.left[1][1] = 'g'; MyCube.left[1][2] = 'g';
+MyCube.left[2][0] = 'w'; MyCube.left[2][1] = 'y'; MyCube.left[2][2] = 'g';
+    
+MyCube.right[0][0] = 'p'; MyCube.right[0][1] = 'y'; MyCube.right[0][2] = 'y';
+MyCube.right[1][0] = 'b'; MyCube.right[1][1] = 'b'; MyCube.right[1][2] = 'b';
+MyCube.right[2][0] = 'b'; MyCube.right[2][1] = 'w'; MyCube.right[2][2] = 'y';
+    
+MyCube.up[0][0] = 'g'; MyCube.up[0][1] = 'y'; MyCube.up[0][2] = 'g';
+MyCube.up[1][0] = 'p'; MyCube.up[1][1] = 'p'; MyCube.up[1][2] = 'p';
+MyCube.up[2][0] = 'p'; MyCube.up[2][1] = 'y'; MyCube.up[2][2] = 'p';
+
+Output: 3- 6+ 4- 7+ 1-
+
+第二组：
+
+MyCube.front[0][0] = 'w'; MyCube.front[0][1] = 'b'; MyCube.front[0][2] = 'w';
+MyCube.front[1][0] = 'w'; MyCube.front[1][1] = 'b'; MyCube.front[1][2] = 'w';
+MyCube.front[2][0] = 'w'; MyCube.front[2][1] = 'g'; MyCube.front[2][2] = 'w';
+
+MyCube.back[0][0] = 'y'; MyCube.back[0][1] = 'b'; MyCube.back[0][2] = 'y';
+MyCube.back[1][0] = 'y'; MyCube.back[1][1] = 'g'; MyCube.back[1][2] = 'y';
+MyCube.back[2][0] = 'y'; MyCube.back[2][1] = 'g'; MyCube.back[2][2] = 'y';
+
+MyCube.up[0][0] = 'b'; MyCube.up[0][1] = 'w'; MyCube.up[0][2] = 'b';
+MyCube.up[1][0] = 'g'; MyCube.up[1][1] = 'w'; MyCube.up[1][2] = 'g';
+MyCube.up[2][0] = 'g'; MyCube.up[2][1] = 'w'; MyCube.up[2][2] = 'g';
+
+MyCube.down[0][0] = 'b'; MyCube.down[0][1] = 'y'; MyCube.down[0][2] = 'b';
+MyCube.down[1][0] = 'b'; MyCube.down[1][1] = 'y'; MyCube.down[1][2] = 'b';
+MyCube.down[2][0] = 'g'; MyCube.down[2][1] = 'y'; MyCube.down[2][2] = 'g';
+
+MyCube.left[0][0] = 'p'; MyCube.left[0][1] = 'p'; MyCube.left[0][2] = 'p';
+MyCube.left[1][0] = 'r'; MyCube.left[1][1] = 'r'; MyCube.left[1][2] = 'r';
+MyCube.left[2][0] = 'r'; MyCube.left[2][1] = 'r'; MyCube.left[2][2] = 'r';
+
+MyCube.right[0][0] = 'r'; MyCube.right[0][1] = 'r'; MyCube.right[0][2] = 'r';
+MyCube.right[1][0] = 'p'; MyCube.right[1][1] = 'p'; MyCube.right[1][2] = 'p';
+MyCube.right[2][0] = 'p'; MyCube.right[2][1] = 'p'; MyCube.right[2][2] = 'p';
+
+Output: 1+ 8- 8- 
+
+第三组：
+
+MyCube.back[0][0] = 'p'; MyCube.back[0][1] = 'p'; MyCube.back[0][2] = 'g';
+MyCube.back[1][0] = 'b'; MyCube.back[1][1] = 'b'; MyCube.back[1][2] = 'y';
+MyCube.back[2][0] = 'r'; MyCube.back[2][1] = 'r'; MyCube.back[2][2] = 'r';
+
+MyCube.up[0][0] = 'y'; MyCube.up[0][1] = 'y'; MyCube.up[0][2] = 'y';
+MyCube.up[1][0] = 'y'; MyCube.up[1][1] = 'y'; MyCube.up[1][2] = 'y';
+MyCube.up[2][0] = 'r'; MyCube.up[2][1] = 'g'; MyCube.up[2][2] = 'g';
+
+MyCube.front[0][0] = 'g'; MyCube.front[0][1] = 'p'; MyCube.front[0][2] = 'p';
+MyCube.front[1][0] = 'g'; MyCube.front[1][1] = 'g'; MyCube.front[1][2] = 'w';
+MyCube.front[2][0] = 'b'; MyCube.front[2][1] = 'b'; MyCube.front[2][2] = 'b';
+
+MyCube.down[0][0] = 'w'; MyCube.down[0][1] = 'w'; MyCube.down[0][2] = 'w';
+MyCube.down[1][0] = 'w'; MyCube.down[1][1] = 'w'; MyCube.down[1][2] = 'w';
+MyCube.down[2][0] = 'b'; MyCube.down[2][1] = 'b'; MyCube.down[2][2] = 'p';
+
+MyCube.right[0][0] = 'b'; MyCube.right[0][1] = 'p'; MyCube.right[0][2] = 'w';
+MyCube.right[1][0] = 'b'; MyCube.right[1][1] = 'p'; MyCube.right[1][2] = 'r';
+MyCube.right[2][0] = 'y'; MyCube.right[2][1] = 'g'; MyCube.right[2][2] = 'r';
+
+MyCube.left[0][0] = 'y'; MyCube.left[0][1] = 'r'; MyCube.left[0][2] = 'g';
+MyCube.left[1][0] = 'p'; MyCube.left[1][1] = 'r'; MyCube.left[1][2] = 'g';
+MyCube.left[2][0] = 'p'; MyCube.left[2][1] = 'r'; MyCube.left[2][2] = 'w';
+
+Output: 5- 3+ 1- 0- 6-
+
+第四组：
+
+MyCube.back[0][0] = 'p'; MyCube.back[0][1] = 'w'; MyCube.back[0][2] = 'p';
+MyCube.back[1][0] = 'r'; MyCube.back[1][1] = 'r'; MyCube.back[1][2] = 'r';
+MyCube.back[2][0] = 'y'; MyCube.back[2][1] = 'r'; MyCube.back[2][2] = 'b';
+
+MyCube.up[0][0] = 'g'; MyCube.up[0][1] = 'b'; MyCube.up[0][2] = 'y';
+MyCube.up[1][0] = 'g'; MyCube.up[1][1] = 'b'; MyCube.up[1][2] = 'y';
+MyCube.up[2][0] = 'g'; MyCube.up[2][1] = 'w'; MyCube.up[2][2] = 'y';
+
+MyCube.front[0][0] = 'w'; MyCube.front[0][1] = 'p'; MyCube.front[0][2] = 'g';
+MyCube.front[1][0] = 'p'; MyCube.front[1][1] = 'p'; MyCube.front[1][2] = 'p';
+MyCube.front[2][0] = 'r'; MyCube.front[2][1] = 'y'; MyCube.front[2][2] = 'r';
+
+MyCube.down[0][0] = 'b'; MyCube.down[0][1] = 'g'; MyCube.down[0][2] = 'b';
+MyCube.down[1][0] = 'b'; MyCube.down[1][1] = 'g'; MyCube.down[1][2] = 'b';
+MyCube.down[2][0] = 'w'; MyCube.down[2][1] = 'g'; MyCube.down[2][2] = 'w';
+
+MyCube.right[0][0] = 'p'; MyCube.right[0][1] = 'y'; MyCube.right[0][2] = 'g';
+MyCube.right[1][0] = 'p'; MyCube.right[1][1] = 'w'; MyCube.right[1][2] = 'w';
+MyCube.right[2][0] = 'p'; MyCube.right[2][1] = 'b'; MyCube.right[2][2] = 'w';
+
+MyCube.left[0][0] = 'b'; MyCube.left[0][1] = 'w'; MyCube.left[0][2] = 'r';
+MyCube.left[1][0] = 'y'; MyCube.left[1][1] = 'y'; MyCube.left[1][2] = 'r';
+MyCube.left[2][0] = 'y'; MyCube.left[2][1] = 'g'; MyCube.left[2][2] = 'r';
+
+Output: 4-, 1+, 1+, 3+, 2-
+
+第五组：
+
+MyCube.back[0][0] = 'g'; MyCube.back[0][1] = 'g'; MyCube.back[0][2] = 'y';
+MyCube.back[1][0] = 'g'; MyCube.back[1][1] = 'g'; MyCube.back[1][2] = 'y';
+MyCube.back[2][0] = 'g'; MyCube.back[2][1] = 'w'; MyCube.back[2][2] = 'w';
+
+MyCube.up[0][0] = 'y'; MyCube.up[0][1] = 'g'; MyCube.up[0][2] = 'g';
+MyCube.up[1][0] = 'w'; MyCube.up[1][1] = 'p'; MyCube.up[1][2] = 'g';
+MyCube.up[2][0] = 'w'; MyCube.up[2][1] = 'p'; MyCube.up[2][2] = 'g';
+
+MyCube.front[0][0] = 'b'; MyCube.front[0][1] = 'b'; MyCube.front[0][2] = 'y';
+MyCube.front[1][0] = 'b'; MyCube.front[1][1] = 'b'; MyCube.front[1][2] = 'w';
+MyCube.front[2][0] = 'b'; MyCube.front[2][1] = 'b'; MyCube.front[2][2] = 'w';
+
+MyCube.down[0][0] = 'y'; MyCube.down[0][1] = 'y'; MyCube.down[0][2] = 'b';
+MyCube.down[1][0] = 'y'; MyCube.down[1][1] = 'r'; MyCube.down[1][2] = 'r';
+MyCube.down[2][0] = 'w'; MyCube.down[2][1] = 'y'; MyCube.down[2][2] = 'b';
+
+MyCube.right[0][0] = 'r'; MyCube.right[0][1] = 'p'; MyCube.right[0][2] = 'p';
+MyCube.right[1][0] = 'r'; MyCube.right[1][1] = 'y'; MyCube.right[1][2] = 'b';
+MyCube.right[2][0] = 'r'; MyCube.right[2][1] = 'p'; MyCube.right[2][2] = 'p';
+
+MyCube.left[0][0] = 'p'; MyCube.left[0][1] = 'p'; MyCube.left[0][2] = 'p';
+MyCube.left[1][0] = 'r'; MyCube.left[1][1] = 'w'; MyCube.left[1][2] = 'r';
+MyCube.left[2][0] = 'r'; MyCube.left[2][1] = 'w'; MyCube.left[2][2] = 'r';
+
+Output: 0+, 5-, 7+, 5-, 1+
+
+
+
+
