@@ -1,19 +1,22 @@
 #include <iostream>
 #include <string.h>
 #include <cstdlib>
+#include <ctime>
 #define HUMAN 1
 #define AI -1
 #define NOTOVER 2
 #define TIE 0
+#define HUMANSCORE 2
+#define AISCORE -2
 using namespace std;
 
 const int SIZE = 5;//井字棋棋盘的大小为5*5
 const int INF = 10000;//表示无穷大
 int status[SIZE][SIZE];//外部的二维数组status，存储棋盘上的状态。
 const string line = " --------- ";//表示在绘制棋盘时的分割线。
-const int MAXDEPTH = 15;//博弈树搜索时所考虑的最大层数。
+const int MAXDEPTH = 8;//博弈树搜索时所考虑的最大层数。
 int player = 1;//外部的整型变量player，表示当前轮到哪个玩家下棋。
-int depth = 0;//当前的搜索深度
+int depth = 0;
 
 void Initial();//初始化游戏状态。
 char ToChar(int x);//返回表示棋子的字符。
@@ -43,8 +46,11 @@ int main(){
             }
         }
         else{ //玩家为AI
+            clock_t startTime = clock();//计时开始
             chess = Minimax_Decision(player);//AI通过Minimax对抗算法生成落子位置
             ChessMove(chess, player);//AI落子
+            clock_t endTime = clock();//计时结束
+            cout << "运行时间：" <<(double)(endTime - startTime) / CLOCKS_PER_SEC << "s" << endl;
         }
         Draw();
         int BoardStatus = Check(chess);//检查此时棋盘状态
@@ -367,10 +373,11 @@ int Minimax_Decision(int player){//计算AI的最佳落子
 int Minimax_Value(int chess, int player, int alpha, int beta){
     int BoardStatus = Check(chess);
     //有玩家获胜，返回对应分数
-    //HUMAN胜利返回得分1，AI胜利返回得分-1
-    if(abs(BoardStatus)==1) return BoardStatus;
-    if(BoardStatus == 0) return 0;//返回和棋的得分：0
-    if (depth >= MAXDEPTH) return 0;//如果搜索超过最大深度就不搜索了，返回得分0
+    //HUMAN胜利返回得分HUMANSCORE，AI胜利返回得分AISCORE
+    if (BoardStatus == -1) return AISCORE;
+    if (BoardStatus == 1) return HUMANSCORE;
+    if(BoardStatus == 0) return TIE;//返回和棋的得分：0
+    if (depth >= MAXDEPTH) return depth;
     int NextPlayer = -player;//下一步由NextPlayer落子
 
     if(player == -1){//当前玩家为AI
@@ -404,6 +411,6 @@ int Minimax_Value(int chess, int player, int alpha, int beta){
         }
     }
 
-    if (NextPlayer == -1) return beta;//如果没遇到要剪枝的问题，下一个玩家是AI就返回Min方的最优值beta
+    if (NextPlayer == AI) return beta;//如果没遇到要剪枝的问题，下一个玩家是AI就返回Min方的最优值beta
     else return alpha;//如果没遇到要剪枝的问题，下一个玩家是人类就返回Max方的最优值alpha
 }
