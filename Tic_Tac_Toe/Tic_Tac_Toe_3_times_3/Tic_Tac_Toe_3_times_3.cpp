@@ -131,7 +131,7 @@ int Minimax_Decision(int player){
                 status[i][j] = 0;//清除落子
                 if(min > temp){
                     min = temp;
-                    choice = i*SIZE+j;
+                    choice = i * SIZE + j;
                 }
             }
         }
