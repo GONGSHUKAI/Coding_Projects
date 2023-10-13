@@ -101,7 +101,7 @@ int CurrentScore(){
                         int new_i = i + dx[action];
                         int new_j = j + dx[action];
                         if (status[new_i+dx[action]][new_j+dy[action]] == status[i][j]){
-                            maxscore += 10;
+                            maxscore += 50;
                         }
                     }
                 }
@@ -112,7 +112,7 @@ int CurrentScore(){
                         int new_i = i + dx[action];
                         int new_j = j + dx[action];
                         if (status[new_i+dx[action]][new_j+dy[action]] == status[i][j]){
-                            maxscore -= 30;
+                            maxscore -= 10;
                         }
                     }
                 }
